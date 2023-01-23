@@ -1,0 +1,35 @@
+{
+    "students": [
+      {
+        "name": "Harry",
+        "surnames": "Potter",
+        "course": "Segundo",
+        "birth": "1980/07/30",
+        "sign": "Cancer",
+        "city": "Godric's Hollow",
+        "country": "Inglaterra",
+        "id": 1
+      },
+      {
+        "name": "Ron",
+        "surnames": "Weasley",
+        "course": "Segundo",
+        "birth": "1980-03-01",
+        "sign": "Piscis",
+        "city": "Ottery St. Catchpole",
+        "country": "Inglaterra",
+        "id": 2
+      },
+      {
+        "name": "Hermione",
+        "surnames": "Granger",
+        "course": "Segundo",
+        "birth": "1979-09-19",
+        "sign": "Virgo",
+        "city": "Londres",
+        "country": "Inglaterra",
+        "id": 3
+      }
+      
+    ]
+  }

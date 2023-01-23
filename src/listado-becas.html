@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beca alumnado</title>
+    <link rel="stylesheet" href="./styles/listado.css">
+</head>
+<body>
+    <header>
+        <a href="">
+                <img src="../assets/img/logo tercer ojo.png" alt="Logo Tercer Ojo">
+        </a>
+
+        <h1>Alumnado Hogwarts en Prácticas</h1>
+
+        <a href="https://es.wikipedia.org/wiki/Colegio_Hogwarts_de_Magia_y_Hechicer%C3%ADa">
+            <img src="../assets/img/emblema hogwarts.png" alt="Escurdo Hogwarts">
+        </a>
+
+    </header>
+
+    <main>
+        <form class="formulario" method="POST">
+            <label>Nombre</label>
+            <input type="text" id="inputNombre" name="nombre" placeholder="Introduzca el nombre" pattern="^[a-zA-Z\s]{3,50}$" autofocus required>
+            <label>Apellidos</label>
+            <input type="text" id="inputApellidos" name="apellidos" placeholder="Introduzca el/los apellido/s" required>
+            <label for="inputCurso">Curso</label>
+            <select name="curso" id="inputCurso" required>
+                <option value="">selecciona...</option>
+                <option value="Primero">Primero</option>
+                <option value="Segundo">Segundo</option>
+                <option value="Tercero">Tercero</option>
+                <option value="Cuarto">Cuarto</option>
+                <option value="Quinto">Quinto</option>
+                <option value="Sexto">Sexto</option>
+                <option value="Séptimo">Séptimo</option>
+            </select>
+            <label for="inputNacimiento">Nacimiento</label>
+            <input type="date" id="inputNacimiento" name="nacimiento" required>
+            <label>Ciudad</label>
+            <input type="text" id="inputCiudad" name="ciudad" placeholder="Introduzca ciudad de origen" required>
+            <label>País</label>
+            <input type="text" id="inputPais" name="pais" placeholder="Introduzca país de origen" required>
+            
+        </form>    
+            
+            <br>
+            <input type="button" value="Agregar" id="agregar">
+            <br>
+        
+        <section>
+            <div>
+                <table id="tablaDatos">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Curso</th>
+                        <th>Nacimiento</th>
+                        <th>Horóscopo</th>
+                        <th>Ciudad</th>
+                        <th>País</th>
+                        <th>Eliminar</th>
+                        <!--esta es la columna donde irá el botón eliminar-->
+                    </tr>
+                    <!-- los elementos nuevos van aquí-->
+                </table>
+            </div>
+            <div id="botones">
+                <input type="button" value="Editar Tabla" id="editar">
+                <input type="button" value="Cargar Lista" id="cargar">
+                <input type="button" value="Guardar Lista" id="guardar">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="footer1">
+            <div id="enlaces">
+                <ul>
+                    <li><a href="">Quiénes somos</a></li>
+                    <li><a href="">Colabora con nuestro equipo</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Contacto</a></li> 
+                </ul>
+            </div>
+
+            <div id="social">
+                <a title="facebook" href="" target="_blank"><img src="../assets/img/facebook.png" alt="facebook"></a>
+                <a title="instagram" href="" target="_blank"><img src="../assets/img/instagram.png" lt="instagram"></a>
+                <a title="linkedin" href="" target="_blank"><img src="../assets/img/linkedin.png" alt="linkedin"></a>
+                <a title="twitter" href="" target="_blank"><img src="../assets/img/twitter.png" alt="twitter"></a>
+            </div>
+
+            <div id="escudos">
+                <a href="">
+                    <img src="../assets/img/logo tercer ojo.png" alt="Logo Tercer Ojo">
+                </a>
+    
+                <a href="https://es.wikipedia.org/wiki/Colegio_Hogwarts_de_Magia_y_Hechicer%C3%ADa">
+                    <img src="../assets/img/emblema hogwarts.png" alt="Escurdo Hogwarts">
+                </a>
+            </div>
+
+        </section>
+
+        <section id="footer2">
+            <div id="copyright">
+                <p>© Copyright <strong>El Tercer Ojo</strong>. Todos los derechos reservados</p>
+            </div> 
+
+            <div id="legal">
+                <a href="" id="politica">Aviso Legal</a>
+                <a href="" id="privacidad">Política de Privacidad</a>
+                <a href="" id="cookies">Política de Cookies</a>
+            </div>
+
+        </section>
+
+    </footer>
+
+    <script src="https://unpkg.com/axios@1.2.2/dist/axios.min.js"></script>
+    <script  type="module" src="" type="text/javascript"></script>
+    <script  type="module" src="" type="text/javascript"></script>
+    <script  type="module" src="" type="text/javascript"></script>
+</body>
+</html>
